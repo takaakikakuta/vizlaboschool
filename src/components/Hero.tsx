@@ -39,7 +39,7 @@ const Hero = () => {
   <div className="w-full md:w-1/2 h-[300px] md:h-full">
   {/* 画像ラッパー */}
   <div className="w-full h-full relative flex items-center justify-center">
-     <Link href={"/sample"}>
+     <Link href={"/course"}>
         <Image
           src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/39ae955d-17c6-41e5-b068-9e9ea49460a6.png"
           alt="Vizlabo Logo"
