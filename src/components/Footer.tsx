@@ -8,8 +8,8 @@ const Footer = () => {
         <div className='container h-full bg-black mx-auto text-white my-5 justify-between flex flex-col md:flex-row p-6'>
             {/* Logo */}
             <div className='flex items-center py-3 space-x-3 h-20'>
-                <img className="h-full rounded-full" src="https://vexpo.s3.ap-northeast-1.amazonaws.com/vizlabo_logo.png" alt="" />
-                <h1 className='font-bold text-4xl'>Vizlabo</h1>
+                <img className="h-full rounded-full" src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/logo.png" alt="" />
+                <h1 className='font-bold text-4xl text-rose-600'>VizlaboSchool</h1>
             </div>
         
             <div className='flex space-x-6'>

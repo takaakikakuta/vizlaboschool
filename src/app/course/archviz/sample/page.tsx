@@ -325,7 +325,7 @@ export default function SampleDetailPage() {
             href="/pre_register"
             className="inline-flex items-center justify-center rounded-full bg-rose-600 px-5 py-2 text-sm font-semibold text-white hover:bg-rose-700"
           >
-            無料カウンセリングを予約
+            事前登録をする
           </Link>
         </div>
       </section>

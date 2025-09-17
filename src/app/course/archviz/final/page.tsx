@@ -73,6 +73,98 @@ export default function FinalDetailPage() {
           </div>
         </div>
 
+       {/* 制作プロセス（参考） */}
+          <section className="mt-12">
+            <h2 className="text-base font-semibold text-zinc-900 mb-4">
+              参考：進行イメージ（4週間）
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              {/* Week 1 */}
+              <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+                <img
+                  src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/week1.png"
+                  alt="企画・構図設計"
+                  className="w-full md:h-64 h-40 object-cover"
+                />
+                <div className="p-5">
+                  <p className="text-xs font-semibold text-emerald-700">Week 1</p>
+                  <h3 className="mt-1 text-sm font-semibold text-zinc-900">
+                    企画・構図設計
+                  </h3>
+                  <p className="mt-2 text-xs text-zinc-600">
+                    建築図面を読み取り、用途・訴求ポイントを決定。
+                    ラフパースでカメラアングルや構図を検討します。
+                  </p>
+                </div>
+              </div>
+
+              {/* Week 2 */}
+              <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+                <img
+                  src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/week2.png"
+                  alt="モデリング・マテリアル"
+                  className="w-full md:h-64 h-40 object-cover"
+                />
+                <div className="p-5">
+                  <p className="text-xs font-semibold text-emerald-700">Week 2</p>
+                  <h3 className="mt-1 text-sm font-semibold text-zinc-900">
+                    モデリング・マテリアル
+                  </h3>
+                  <p className="mt-2 text-xs text-zinc-600">
+                    建物モデルや主要オブジェクトを制作。
+                    質感設定やライティングの下地を整えます。
+                  </p>
+                </div>
+              </div>
+
+              {/* Week 3 */}
+              <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+                <img
+                  src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/week3.png"
+                  alt="ライティング・レンダリング"
+                  className="w-full md:h-64 h-40 object-cover"
+                />
+                <div className="p-5">
+                  <p className="text-xs font-semibold text-emerald-700">Week 3</p>
+                  <h3 className="mt-1 text-sm font-semibold text-zinc-900">
+                    ライティング・レンダリング
+                  </h3>
+                  <p className="mt-2 text-xs text-zinc-600">
+                    光源設計や背景演出を行い、最終品質に近いレンダリングを試作します。
+                  </p>
+                </div>
+              </div>
+
+              {/* Week 4 */}
+              <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+                <img
+                  src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/week4.png"
+                  alt="仕上げ・提出"
+                  className="w-full md:h-64 h-40 object-cover"
+                />
+                <div className="p-5">
+                  <p className="text-xs font-semibold text-emerald-700">Week 4</p>
+                  <h3 className="mt-1 text-sm font-semibold text-zinc-900">
+                    仕上げ・提出
+                  </h3>
+                  <p className="mt-2 text-xs text-zinc-600">
+                    ポストプロセスや色調整を行い、成果物を提出。
+                    講師レビューを受けて最終ブラッシュアップします。
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <p className="mt-3 text-xs text-zinc-500">
+              ※ 実際の進行は課題内容や進捗により変動します（目安としてご参照ください）。
+            </p>
+          </section>
+
+
+
         <div className="mt-6 rounded-2xl border bg-emerald-50 p-5 text-sm text-emerald-800">
           注意：実案件の場合はNDAに準拠します。公開不可の場合でも、評価は非公開環境で実施可能です。
         </div>

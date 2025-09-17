@@ -115,8 +115,8 @@ export default function BasicsDetailPage() {
           <Link href="/course/archviz/sample" className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-5 py-2 text-sm font-semibold text-zinc-800 hover:bg-zinc-50">
             次：サンプル制作の詳細 →
           </Link>
-          <Link href="/apply" className="inline-flex items-center justify-center rounded-full bg-rose-600 px-5 py-2 text-sm font-semibold text-white hover:bg-rose-700">
-            無料カウンセリングを予約
+          <Link href="/pre_register" className="inline-flex items-center justify-center rounded-full bg-rose-600 px-5 py-2 text-sm font-semibold text-white hover:bg-rose-700">
+            事前登録をする
           </Link>
         </div>
       </section>

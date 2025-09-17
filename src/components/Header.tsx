@@ -31,7 +31,7 @@ const Header = () => {
             
 
             {/* Menu */}
-            <div className='items-center 2xl:space-x-12 space-x-2 2xl:text-xl text-lg 2xl:font-bold px-12 hidden xl:flex text-gray-400 justify-start'>
+            <div className='items-center md:space-x-12 space-x-2 md:text-xl text-lg md:font-bold px-12 hidden md:flex text-gray-400 justify-start'>
                 <Link href="/">
                   <h1 className='hover:border-b-2 hover:font-semibold hover:text-black'>ホーム</h1>
                 </Link>
