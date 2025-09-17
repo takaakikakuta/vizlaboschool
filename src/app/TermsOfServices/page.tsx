@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Header2 from '@/components/Header2'
 import React from 'react'
 
 const page = () => {
