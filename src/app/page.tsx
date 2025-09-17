@@ -29,7 +29,7 @@ const Home = async () => {
       <FlowSteps/>
       <PostCourseFollowUp/>
       <CGSkills/>
-
+      <CTA/>
       <Footer/>
     </main>
   );

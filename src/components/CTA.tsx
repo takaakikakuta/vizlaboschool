@@ -12,8 +12,8 @@ type Props = {
 
 export default function CTA({
   href = "/apply",
-  label = "無料カウンセリングを予約する",
-  note = "まずはお気軽にご相談ください",
+  label = "事前登録する",
+  note = "まずはお気軽にご登録ください",
   className = "",
 }: Props) {
   return (
