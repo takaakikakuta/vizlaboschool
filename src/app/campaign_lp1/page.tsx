@@ -27,7 +27,7 @@ function Badge({ children }: { children: React.ReactNode }) {
     </span>
   );
 }
-function CapacityBar({ total = 10, reserved = 3 }: { total?: number; reserved?: number }) {
+function CapacityBar({ total = 10, reserved = 0 }: { total?: number; reserved?: number }) {
   const pct = Math.min(100, Math.round((reserved / total) * 100));
   return (
     <div className="w-full">
@@ -102,6 +102,7 @@ function Hero() {
           <span className="text-rose-600">4か月で“使える”を定着</span>
         </p>
         <SoftwareNote />   {/* ← これを追加 */}
+        <LaunchNote />
         <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight text-zinc-900 sm:text-5xl">
           <span className="text-rose-600">伴走コーチング</span>で“即戦力化”。<br className="hidden sm:block" />
           先着10名だけの<strong>特別オファー</strong>
@@ -131,7 +132,7 @@ function Hero() {
             </p>
 
             <div className="mb-6 max-w-sm">
-              <CapacityBar total={10} reserved={3} />
+              <CapacityBar total={10} reserved={0} />
             </div>
 
             <div className="flex flex-col items-center gap-3 sm:flex-row">
@@ -373,6 +374,14 @@ function BottomCTA() {
         </Link>
       </div>
     </section>
+  );
+}
+
+function LaunchNote() {
+  return (
+    <p className="mx-auto mt-2 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-semibold text-zinc-700">
+      🗓 2026年1月開講予定
+    </p>
   );
 }
 
