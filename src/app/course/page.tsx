@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 /**
  * 提供物：アーキビジュアライゼーション／エンジニアリングビジュアライゼーションの2コース紹介ページ
@@ -18,6 +19,19 @@ export default function CoursesPage() {
     <main className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-800">
       {/* ===== Hero ===== */}
       <Header/>
+      <div className="mx-auto max-w-6xl px-4 py-2 mt-24">
+        <Breadcrumbs
+          // 自動生成でOKだが、表示名を日本語にしたい場合は titleMap を使う
+          titleMap={{
+            course: "コース",
+            archviz: "建築ビジュアライゼーション",
+            engineering: "エンジニアリング",
+          }}
+          homeLabel="トップ"
+          homeHref="/"
+          separator="›"
+        />
+      </div>
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent)]">
           <svg viewBox="0 0 1200 600" className="h-full w-full">
@@ -34,7 +48,7 @@ export default function CoursesPage() {
             </g>
           </svg>
         </div>
-        <div className="mx-auto max-w-6xl px-4 pt-20">
+        <div className="mx-auto max-w-6xl px-4 pt-4">
           <p className="text-xs font-semibold tracking-widest text-emerald-600">COURSES</p>
           <h1 className="mt-3 text-3xl font-bold leading-tight text-zinc-900 sm:text-5xl">
             ビジュアライゼーションで<br className="hidden sm:block" />

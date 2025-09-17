@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata = {
   title: "卒業制作｜コース詳細",
@@ -12,12 +13,23 @@ export default function FinalDetailPage() {
   return (
     <main className="bg-white">
       <Header />
-      <section className="mx-auto max-w-5xl px-6 md:pt-12 pt-20">
-        <nav className="mb-6 text-sm text-zinc-500">
-          <Link href="/course" className="hover:underline">
-            ← コース一覧に戻る
-          </Link>
-        </nav>
+      <div className="mx-auto max-w-6xl px-4 py-2 mt-24">
+        <Breadcrumbs
+          // 自動生成でOKだが、表示名を日本語にしたい場合は titleMap を使う
+          titleMap={{
+            course: "コース",
+            archviz: "建築ビジュアライゼーション",
+            engineering: "エンジニアリング",
+            basics:"基礎（動画自習＋面談）",
+            sample:"サンプル制作",
+            final:"最終実践課題"
+          }}
+          homeLabel="トップ"
+          homeHref="/"
+          separator="›"
+          />
+      </div>
+      <section className="mx-auto max-w-5xl px-6 pt-4">
 
         <h1 className="text-2xl font-bold text-zinc-900">最終実践課題</h1>
         <p className="mt-3 text-zinc-600">

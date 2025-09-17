@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
 import Campaign from "@/components/Campaign"
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 // ---- メタデータ ----
 export const metadata = {
@@ -93,10 +94,23 @@ export default function CoursePage() {
   return (
     <main className="bg-white">
       <Header />
+      <div className="mx-auto max-w-6xl px-4 py-2 mt-24">
+        <Breadcrumbs
+          // 自動生成でOKだが、表示名を日本語にしたい場合は titleMap を使う
+          titleMap={{
+            course: "コース",
+            archviz: "建築ビジュアライゼーション",
+            engineering: "エンジニアリング",
+          }}
+          homeLabel="トップ"
+          homeHref="/"
+          separator="›"
+        />
+      </div>
 
       {/* ページ全体の見出し（h1） */}
       <section className="bg-zinc-50">
-        <div className="mx-auto max-w-6xl px-6 pt-10 pb-6 text-center mt-20">
+        <div className="mx-auto max-w-6xl px-6 pt-10 pb-6 text-center">
           <h1 className="text-3xl font-bold text-zinc-900 sm:text-5xl">
             建築ビジュアライゼーションコース一覧
           </h1>
