@@ -94,14 +94,26 @@ export default function CoursePage() {
     <main className="bg-white">
       <Header />
 
+      {/* ページ全体の見出し（h1） */}
+      <section className="bg-zinc-50">
+        <div className="mx-auto max-w-6xl px-6 pt-10 pb-6 text-center mt-20">
+          <h1 className="text-3xl font-bold text-zinc-900 sm:text-5xl">
+            建築ビジュアライゼーションコース一覧
+          </h1>
+          <p className="mt-2 text-sm text-zinc-600 sm:text-base">
+            実務で通用するCGパース力を身につけるための3つのコース
+          </p>
+        </div>
+      </section>
+
       {/* HERO */}
-     <section className="bg-gradient-to-b from-white via-zinc-50 to-white mt-20">
-      <div className="mx-auto max-w-6xl px-6 md:py-14 pt-8 text-center">
+     <section className="bg-gradient-to-b from-white via-zinc-50 to-white">
+      <div className="mx-auto max-w-6xl px-6 md:py-4 text-center">
         <Pill>学習のステップ</Pill>
-        <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight text-zinc-900 sm:text-5xl">
+        <h2 className="mx-auto mt-4 max-w-4xl text-2xl font-bold leading-tight text-zinc-900 sm:text-4xl">
           実務で通用する力を身につける<br />
           <span className="text-rose-600">3段階カリキュラム</span>
-        </h1>
+        </h2>
         <p className="mx-auto mt-4 max-w-3xl text-sm text-zinc-600 sm:text-base">
           基礎は動画で効率よくインプット。週1面談で詰まりを解消しながら、
           サンプル制作を経て最終課題へ。段階的に「使える制作力」を定着させます。
@@ -142,10 +154,10 @@ export default function CoursePage() {
       <section className="bg-gradient-to-b from-white via-zinc-50 to-white md:mt-6 mt-0">
         <div className="mx-auto max-w-6xl px-6 md:pb-14 pb-4 pt-4 text-center">
           <Pill>コースは3種類</Pill>
-          <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight text-zinc-900 sm:text-5xl">
+          <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
             目的とスケジュールに合わせて選べる<br />
             <span className="text-rose-600"> 3つのコース</span>
-          </h1>
+          </h2>
           <p className="mx-auto mt-4 max-w-3xl text-sm text-zinc-600 sm:text-base">
             基礎は動画で効率よく自習。週1面談で詰まりを解消しながら、サンプル制作を経て卒業制作へ。
             実務で通用するCGパースの制作力を、段階的に定着させます。
