@@ -1,36 +1,9 @@
-// app/thanks/page.tsx
-"use client";
-
-import { useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ThanksPage() {
-  const params = useSearchParams();
-  const src = params.get("src") ?? "unknown";
-
-  useEffect(() => {
-    // 二重発火防止（リロード対策）
-    const key = `fired-${src}`;
-    if (sessionStorage.getItem(key)) return;
-    sessionStorage.setItem(key, "1");
-
-    // Meta Pixel (Lead)
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Lead", { source: src });
-    }
-
-    // GTM / dataLayer カスタムイベント
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
-      event: "form_submit",
-      form_name: src,         // 'contact'
-      form_category: "問い合わせ",
-      value: 1,
-    });
-  }, [src]);
+  
 
   return (
     <>
