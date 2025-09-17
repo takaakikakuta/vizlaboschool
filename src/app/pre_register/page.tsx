@@ -127,6 +127,9 @@ export default function PreRegisterPage() {
             <span className="hidden h-1 w-1 rounded-full bg-zinc-300 sm:inline-block" />
             <span className="text-rose-600">通常88万円 → 33万円</span>
           </p>
+          <p className="mx-auto mb-3 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-semibold text-zinc-700 shadow-sm">
+            2026年1月開講予定
+          </p>
           <h1 className="mx-auto max-w-4xl text-2xl font-bold leading-tight text-zinc-900 sm:text-5xl">
             法人向けオンラインCGコーチング
             <br className="hidden sm:block" />
