@@ -54,7 +54,8 @@ const ApplyForm: React.FC = () => {
       });
       console.log(formData);
       
-      setSubmitted(true);
+      // 👉 サンクスへ遷移（src パラメータで発火元を持っていく）
+      router.replace("/Contact/thanks?src=contact");
     } catch (error) {
       console.error("Error sending mail:", error);
     }

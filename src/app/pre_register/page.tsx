@@ -97,7 +97,7 @@ export default function PreRegisterPage() {
         category: "事前登録", // 念のため明示
         message: text,
       });
-      setDone(true);
+      router.replace("/pre_register/thanks?src=pre_register");
     } catch (err: any) {
       console.error(err);
       setError(err?.message || "送信に失敗しました。時間をおいて再度お試しください。");

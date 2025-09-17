@@ -9,7 +9,7 @@ import FlowSteps_Campaign from "@/components/FlowSteps_Campaign";
    メタデータ
 ========================= */
 export const metadata = {
-  title: "建築設計者向け 即戦力育成プログラム | 先行予約キャンペーン",
+  // title: "建築設計者向け 即戦力育成プログラム | 先行予約キャンペーン",
   description:
     "4か月集中・伴走コーチングで即戦力化。法人向け人材育成プログラム。先着10名限定で88万円→33万円（2026年1月開講予定）。10/15まで登録でクーポン発行・30日間返金保証。",
   openGraph: {
