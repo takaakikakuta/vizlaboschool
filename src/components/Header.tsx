@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
             <div className='w-full md:w-auto'>
               <Link href="/" className='h-full flex items-center space-x-3 py-3'>
-                <img className="h-full rounded-full" src="https://vexpo.s3.ap-northeast-1.amazonaws.com/vizlabo_logo.png" alt="" />
+                <img className="h-full rounded-full" src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/logo.png" alt="" />
                 <h1 className='font-bold md:text-4xl text-2xl text-red-600'>VizlaboSchool</h1>
               </Link>
             </div>
@@ -31,7 +31,7 @@ const Header = () => {
             
 
             {/* Menu */}
-            <div className='items-center 2xl:space-x-8 space-x-2 2xl:text-xl text-lg 2xl:font-bold px-8 hidden xl:flex text-gray-400 justify-start'>
+            <div className='items-center 2xl:space-x-12 space-x-2 2xl:text-xl text-lg 2xl:font-bold px-12 hidden xl:flex text-gray-400 justify-start'>
                 <Link href="/">
                   <h1 className='hover:border-b-2 hover:font-semibold hover:text-black'>ホーム</h1>
                 </Link>
