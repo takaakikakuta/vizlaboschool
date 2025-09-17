@@ -26,7 +26,7 @@ const Hero = () => {
   </div>
   <div className='w-full space-y-2 md:px-8 px-2 pt-6'>
     
-    <div className="md:flex gap-4 px-8 py-4 text-white hidden justify-center">
+    <div className="md:flex gap-4 px-8 py-4 text-white hidden justify-center mt-20">
       <Link href="/pre_register" aria-label="無料トライアルページへ">
         <button className="bg-red-600 px-8 py-5 rounded-lg font-bold hover:opacity-50 md:text-xl border border-red-600 text-lg">事前登録をする</button>
       </Link>
