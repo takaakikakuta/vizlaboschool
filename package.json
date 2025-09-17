@@ -11,6 +11,7 @@
   "dependencies": {
     "@aws-amplify/ui-react-native": "^2.6.0",
     "@heroicons/react": "^2.2.0",
+    "@next/third-parties": "^15.5.3",
     "aws-amplify": "^6.15.6",
     "axios": "^1.12.2",
     "clsx": "^2.1.1",
@@ -25,8 +26,8 @@
     "@aws-amplify/backend-cli": "^1.8.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "^24.5.1",
+    "@types/react": "^19.1.13",
     "@types/react-dom": "^19",
     "aws-cdk-lib": "^2.204.0",
     "constructs": "^10.4.2",
