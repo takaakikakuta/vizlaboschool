@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import LessonList, { Lesson } from "@/components/LessonList";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LessonListWide from "@/components/LessonListWide";
 
 export const metadata = {
   title: "基礎（動画自習＋面談）｜コース詳細",
@@ -213,6 +214,7 @@ const Interior: Lesson[] = [
   {
   title: "マグカップをつくる",
   desc: "スピン（回転押し出し）で本体を作成し、取っ手はカーブから押し出して滑らかにつなげる。スムーズシェードと厚み付けで仕上げる。",
+  thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/cup_sample.png",
   // index: [
   //   {label: "スケール調整",video: "/videos/book-scale.mp4",poster: "/images/book-scale.jpg",tip: "Sキーで本らしい縦横比に整える"},
   //   {label: "複製と整列",video: "/videos/book-array.mp4",poster: "/images/book-array.jpg",tip: "Arrayで等間隔に複製して並べる"},
@@ -222,6 +224,7 @@ const Interior: Lesson[] = [
   {
   title: "本をつくる",
   desc: "シンプルな立方体から始め、スケール調整・複製・整列で本を並べる。Arrayで効率よくボリューム感を出し、マテリアルで背表紙に色をつける。",
+  thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/book_sample.png",
   // index: [
   //   {label: "スケール調整",video: "/videos/book-scale.mp4",poster: "/images/book-scale.jpg",tip: "Sキーで本らしい縦横比に整える"},
   //   {label: "複製と整列",video: "/videos/book-array.mp4",poster: "/images/book-array.jpg",tip: "Arrayで等間隔に複製して並べる"},
@@ -231,6 +234,7 @@ const Interior: Lesson[] = [
   {
     title: "棚をつくる",
     desc: "ミラーとスナップを活用して棚を効率的に構築。厚み付け・ブーリアンで強度や空間を表現し、木目マテリアルで質感を演出する。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/shelf_sample.png",
     // index: [
     //   {label: "ミラーモディファイア",video: "/videos/shelf-mirror.mp4",poster: "/images/shelf-mirror.jpg",tip: "左右対称にして編集作業を半減"},
     //   {label: "スナップで整列",video: "/videos/shelf-snap.mp4",poster: "/images/shelf-snap.jpg",tip: "頂点スナップで板を正確に配置"},
@@ -240,6 +244,7 @@ const Interior: Lesson[] = [
   {
     title: "テーブルをつくる",
     desc: "原点位置を意識しながら天板と脚を構成。複製と整列で脚を効率的に配置し、スムーズシェードで質感を整える。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/table_sample.png",
     // index: [
     //   {label: "原点と整列",video: "/videos/table-origin.mp4",poster: "/images/table-origin.jpg",tip: "原点を中央に設定し、脚を等間隔に配置"},
     //   {label: "複製と整列",video: "/videos/table-legs.mp4",poster: "/images/table-legs.jpg",tip: "Shift+Dと軸制限で正確に複製配置"},
@@ -249,6 +254,7 @@ const Interior: Lesson[] = [
   {
     title: "椅子をつくる",
     desc: "ローカル軸を意識した回転配置で椅子を組み立て。親子付けでパーツを整理し、姿勢を崩さず動かせるようにする。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/chair_sample.png",
     // index: [
     //   {label: "ローカル軸回転",video: "/videos/chair-local.mp4",poster: "/images/chair-local.jpg",tip: "ローカル軸で背もたれを自然に傾ける"},
     //   {label: "親子付け",video: "/videos/chair-parent.mp4",poster: "/images/chair-parent.jpg",tip: "脚と座面を親子付けして一体操作"},
@@ -258,6 +264,7 @@ const Interior: Lesson[] = [
   {
     title: "ベッドライトをつくる",
     desc: "基本的なランプオブジェクトを使い、ポイントライトで柔らかな光を演出。色温度と減衰距離を調整して自然な照明を再現。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/bedlight_sample.png",
     // index: [
     //   {label: "ポイントライト配置",video: "/videos/bedlight-light.mp4",poster: "/images/bedlight-light.jpg",tip: "ポイントライトを電球の位置に設置"},
     //   {label: "色温度設定",video: "/videos/bedlight-color.mp4",poster: "/images/bedlight-color.jpg",tip: "暖色系（約3000K）で温かみを演出"},
@@ -268,6 +275,7 @@ const Interior: Lesson[] = [
   {
     title: "カーテンをつくる",
     desc: "クロスモディファイアで自然なたわみを表現し、シンプルな布ジオメトリから始めて、ピン留めと重力でリアルなドレープを再現。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/curtain_sample.png",
     // index: [
     //   {label: "クロスモディファイア",video: "/videos/curtain-cloth.mp4",poster: "/images/curtain-cloth.jpg",tip: "クロス設定で布の物理シミュレーションを有効化"},
     //   {label: "ピン留めと重力",video: "/videos/curtain-pin.mp4",poster: "/images/curtain-pin.jpg",tip: "頂点グループで上端を固定して垂らす"},
@@ -277,6 +285,7 @@ const Interior: Lesson[] = [
   {
     title: "クッションをつくる",
     desc: "立方体にSubdivisionとクロスモディファイアを適用して自然なたわみを作る。ピン留めと押し出しでふくらみ感を演出する。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/cussion_sample.png",
     // index: [
     //   {label: "クロスモディファイア",video: "/videos/curtain-cloth.mp4",poster: "/images/curtain-cloth.jpg",tip: "クロス設定で布の物理シミュレーションを有効化"},
     //   {label: "ピン留めと重力",video: "/videos/curtain-pin.mp4",poster: "/images/curtain-pin.jpg",tip: "頂点グループで上端を固定して垂らす"},
@@ -286,6 +295,7 @@ const Interior: Lesson[] = [
   {
     title: "観葉植物をつくる",
     desc: "葉は平面からモディファイアで曲げ、Arrayで複製して配置。鉢は回転押し出しで作成し、全体をコレクションで整理する。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/plant_sample.png",
     // index: [
     //   {label: "クロスモディファイア",video: "/videos/curtain-cloth.mp4",poster: "/images/curtain-cloth.jpg",tip: "クロス設定で布の物理シミュレーションを有効化"},
     //   {label: "ピン留めと重力",video: "/videos/curtain-pin.mp4",poster: "/images/curtain-pin.jpg",tip: "頂点グループで上端を固定して垂らす"},
@@ -358,7 +368,7 @@ export default function BasicsDetailPage() {
         {/* ▼ 追加：CGパース入門（4テーマ） */}
         <div className="mt-12">
           <h2 className="mb-4 text-base font-semibold text-zinc-900">インテリアを作りながら基本操作に慣れる</h2>
-          <LessonList items={Interior} color="emerald"/>
+          <LessonListWide items={Interior} color="emerald"/>
           <p className="mt-3 text-xs text-zinc-500">
             ※ 各テーマはテンプレート／チェックリスト付き。作例は課題として提出し、面談で添削します。
           </p>

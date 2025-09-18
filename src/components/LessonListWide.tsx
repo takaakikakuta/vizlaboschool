@@ -1,3 +1,4 @@
+// components/LessonListWide.tsx
 "use client";
 
 import React from "react";
@@ -13,49 +14,75 @@ export type Lesson = {
   title: string;
   desc: string;
   index?: IndexItem[];
+  // 任意：行の左に出すサムネ。未指定なら index[0].poster を使用
   thumbnail?: string;
 };
 
-// Tailwind用の色クラスをまとめておく
 const COLOR_MAP = {
-  rose: {
-    bg: "bg-rose-50",
-    text: "text-rose-600",
-  },
-  sky: {
-    bg: "bg-sky-50",
-    text: "text-sky-600",
-  },
-  emerald: {
-    bg: "bg-emerald-50",
-    text: "text-emerald-600",
-  },
-  zinc: {
-    bg: "bg-zinc-100",
-    text: "text-zinc-700",
-  },
+  rose: { bg: "bg-rose-50", text: "text-rose-600" },
+  sky: { bg: "bg-sky-50", text: "text-sky-600" },
+  emerald: { bg: "bg-emerald-50", text: "text-emerald-600" },
+  zinc: { bg: "bg-zinc-100", text: "text-zinc-700" },
 } as const;
 
 type Props = {
   items: Lesson[];
-  color?: keyof typeof COLOR_MAP; // ← カラー指定（省略時rose）
+  color?: keyof typeof COLOR_MAP;
+  // サムネのアスペクト比（デフォルト 16:9）
+  thumbAspectClass?: string; // 例: "aspect-[4/3]" "aspect-square"
 };
 
-export default function LessonList({ items, color = "rose" }: Props) {
+export default function LessonListWide({
+  items,
+  color = "rose",
+  thumbAspectClass = "aspect-video",
+}: Props) {
   const colorSet = COLOR_MAP[color];
 
+  const getThumb = (t: Lesson) =>
+    t.thumbnail || t.index?.find((x) => x.poster)?.poster || "";
+
   return (
-    <ol className="grid gap-3 sm:grid-cols-2">
+    <ol className="space-y-3">
       {items.map((t, i) => (
         <li key={i}>
-          <details className="group rounded-xl border border-zinc-200 bg-white p-0 shadow-sm">
+          <details className="group rounded-xl border border-zinc-200 bg-white shadow-sm">
+            {/* ヘッダー：サムネ + タイトル（横並び） */}
             <summary className="flex cursor-pointer list-none items-center gap-3 px-4 py-3">
-              <span
-                className={`mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full text-sm font-bold ${colorSet.bg} ${colorSet.text}`}
+              {/* サムネ */}
+              <div
+                className={`relative ${thumbAspectClass} w-28 overflow-hidden rounded-lg bg-zinc-100 sm:w-36 h-32`}
+                aria-hidden
               >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="text-sm font-medium text-zinc-900">{t.title}</span>
+                {getThumb(t) ? (
+                  <img
+                    src={getThumb(t)!}
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="absolute inset-0 grid place-items-center text-xs text-zinc-400">
+                    No image
+                  </div>
+                )}
+              </div>
+
+              {/* タイトル + カウント */}
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <span
+                    className={`inline-flex h-7 w-7 flex-none items-center justify-center rounded-full text-sm font-bold ${colorSet.bg} ${colorSet.text}`}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="truncate text-sm font-medium text-zinc-900">
+                    {t.title}
+                  </span>
+                </div>
+              </div>
+
+              {/* chevron */}
               <span
                 className="ml-auto mt-1 inline-block rotate-0 text-zinc-400 transition-transform group-open:rotate-180"
                 aria-hidden
@@ -71,6 +98,7 @@ export default function LessonList({ items, color = "rose" }: Props) {
               </span>
             </summary>
 
+            {/* 本文：説明 + 目次 */}
             <div className="grid overflow-hidden px-4 pb-3 text-sm text-zinc-700 transition-[grid-template-rows] duration-300 ease-out [grid-template-rows:0fr] group-open:[grid-template-rows:1fr]">
               <div className="min-h-0 leading-6">{t.desc}</div>
             </div>
