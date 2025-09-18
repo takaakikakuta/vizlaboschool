@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import Campaign from "@/components/Campaign"
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Image from "next/image";
 
 // ---- メタデータ ----
 export const metadata = {
@@ -119,6 +120,23 @@ export default function CoursePage() {
           </p>
         </div>
       </section>
+
+      {/* ▼▼ ここに画像ブロックを挿入（Hero と h1 の間） ▼▼ */}
+      <section className="mx-auto max-w-6xl px-6 mb-2">
+        <div className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+          {/* アスペクト比を16:9に固定（必要なら変更可） */}
+         <div className="relative w-full md:h-[400px] h-40">
+          <Image
+            src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/VizlaboSchoolHero.png"
+            alt="建築ビジュアライゼーション コースのイメージ"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        </div>
+      </section>
+      {/* ▲▲ ここまで画像ブロック ▲▲ */}
 
       {/* HERO */}
      <section className="bg-gradient-to-b from-white via-zinc-50 to-white">
