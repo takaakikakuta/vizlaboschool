@@ -114,7 +114,7 @@ export default function PreRegisterPage() {
       <div className="bg-rose-600 text-white md:mt-24 mt-28">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 px-6 py-2 sm:flex-row">
           <p className="text-sm sm:text-base font-semibold">
-            🎉 10/15 23:59 までの事前登録でクーポン発行／30日間返金保証
+            🎉 9/30 23:59 までの事前登録でクーポン発行／30日間返金保証
           </p>
         </div>
       </div>
