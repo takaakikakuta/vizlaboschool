@@ -235,7 +235,7 @@ function PriceAnchor() {
           <h4 className="text-lg font-semibold">通常プラン（法人）</h4>
           <p className="mt-2 text-sm text-zinc-600">1名あたり</p>
           <div className="mt-4 flex items-end gap-2">
-            <span className="text-3xl font-bold">¥800,000</span>
+            <span className="text-3xl font-bold">¥880,000</span>
             <span className="text-sm text-zinc-500">（税込）</span>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-zinc-700">
@@ -254,10 +254,10 @@ function PriceAnchor() {
           <p className="mt-2 text-sm text-rose-700">2026年1月開講予定／受講者差し替え可</p>
           <div className="mt-4">
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-bold text-rose-900">¥300,000</span>
+              <span className="text-3xl font-bold text-rose-900">¥330,000</span>
               <span className="text-sm text-rose-700">（税込）</span>
             </div>
-            <p className="mt-1 text-xs text-rose-700 line-through">通常 ¥800,000</p>
+            <p className="mt-1 text-xs text-rose-700 line-through">通常 ¥880,000</p>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-rose-900">
             <li>・内容は通常プランと同等</li>
