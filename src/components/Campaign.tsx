@@ -30,7 +30,7 @@ export default function Campaign() {
 
         {/* メインキャッチ */}
         <h2 className="mb-4 md:text-4xl text-2xl font-bold tracking-tight">
-          10月15日までの事前登録者には
+          9月30日までの事前登録者には
           <br />
           <span className="text-rose-600 underline decoration-rose-400">
             88万円コースが33万円に！

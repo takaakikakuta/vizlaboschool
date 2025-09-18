@@ -54,7 +54,7 @@ function PromoBanner() {
     <div className="bg-rose-600 text-white md:mt-24 mt-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-2">
         <p className="text-2xl font-semibold">
-          🎉 建築ビジュアライゼーションコース完成記念｜【10/15 23:59 まで】事前登録でクーポン発行
+          🎉 建築ビジュアライゼーションコース完成記念｜【9/30 23:59 まで】事前登録でクーポン発行
         </p>
         <p className="text-xs sm:text-sm">登録＝申し込みではありません／30日間返金保証</p>
       </div>
@@ -116,7 +116,7 @@ function Hero() {
             <div className="mb-3 flex flex-wrap gap-2">
               <Badge>法人向け</Badge>
               <Badge>建築CGコース完成記念</Badge>
-              <Badge>10/15までクーポン</Badge>
+              <Badge>9/30までクーポン</Badge>
               <Badge>30日間返金保証</Badge>
             </div>
             <h2 className="mb-3 text-2xl font-bold sm:text-3xl">
@@ -128,7 +128,7 @@ function Hero() {
               で受講可能
             </h2>
             <p className="mb-6 text-sm text-white/80">
-              10/15までの登録で<span className="font-semibold">建築CGコース完成記念クーポンを発行</span>（申込時に自動適用／法人名義OK）。
+              9/30までの登録で<span className="font-semibold">建築CGコース完成記念クーポンを発行</span>（申込時に自動適用／法人名義OK）。
             </p>
 
             <div className="mb-6 max-w-sm">
@@ -261,7 +261,7 @@ function PriceAnchor() {
           </div>
           <ul className="mt-4 space-y-2 text-sm text-rose-900">
             <li>・内容は通常プランと同等</li>
-            <li>・<strong>10/15までの登録でクーポン発行</strong>（申込時に自動適用）</li>
+            <li>・<strong>9/30までの登録でクーポン発行</strong>（申込時に自動適用）</li>
             <li>・<strong>30日間返金保証</strong>つき</li>
           </ul>
           <Link
@@ -314,7 +314,7 @@ function Guarantee() {
         <h3 className="text-xl font-semibold">保証と条件</h3>
         <ul className="mt-3 space-y-2 text-sm text-zinc-700">
           <li>・<strong>30日間返金保証</strong>：開講から30日以内に申請で返金（契約条件に準拠）</li>
-          <li>・<strong>クーポン発行</strong>：<span className="font-medium">10/15 23:59</span> までの登録が対象（法人名義可）</li>
+          <li>・<strong>クーポン発行</strong>：<span className="font-medium">9/30 23:59</span> までの登録が対象（法人名義可）</li>
           <li>・<strong>受講者差し替え可</strong>：開講前まで名簿変更に対応</li>
         </ul>
         <p className="mt-3 text-xs text-zinc-500">※ 返金・クーポンの詳細条件はお申し込み時の契約書にてご確認ください。</p>
@@ -352,7 +352,7 @@ function BottomCTA() {
       <div className="mb-3 flex flex-wrap items-center justify-center gap-2">
         <Badge>先着10名限定</Badge>
         <Badge>通常80万円 → 30万円</Badge>
-        <Badge>10/15までクーポン</Badge>
+        <Badge>9/30までクーポン</Badge>
         <Badge>30日間返金保証</Badge>
       </div>
       <h3 className="mx-auto max-w-3xl text-2xl font-bold">“今”なら、小さく始めて大きく残せる</h3>
@@ -361,17 +361,17 @@ function BottomCTA() {
       </p>
       <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <Link
-          href="/apply"
+          href="/pre_register"
           className="inline-flex items-center justify-center rounded-full bg-rose-500 px-6 py-3 font-semibold text-white shadow hover:bg-rose-600"
         >
-          先行予約フォームへ
+          事前登録する
         </Link>
-        <Link
+        {/* <Link
           href="/contact"
           className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 font-semibold text-white hover:bg-white/10"
         >
           資料請求・相談する
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
