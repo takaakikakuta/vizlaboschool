@@ -53,7 +53,7 @@ function PromoBanner() {
   return (
     <div className="bg-rose-600 text-white md:mt-24 mt-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-2">
-        <p className="text-2xl font-semibold">
+        <p className="md:text-2xl text-lg font-semibold">
           🎉 建築ビジュアライゼーションコース完成記念｜【9/30 23:59 まで】事前登録でクーポン発行
         </p>
         <p className="text-xs sm:text-sm">登録＝申し込みではありません／30日間返金保証</p>
@@ -103,14 +103,14 @@ function Hero() {
         </p>
         <SoftwareNote />   {/* ← これを追加 */}
         <LaunchNote />
-        <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight text-zinc-900 sm:text-5xl">
+        <h1 className="mx-auto max-w-4xl text-2xl font-bold leading-tight text-zinc-900 sm:text-5xl">
           <span className="text-rose-600">伴走コーチング</span>で“即戦力化”。<br className="hidden sm:block" />
           先着10名だけの<strong>特別オファー</strong>
         </h1>
       </div>
 
       {/* オファーカード */}
-      <div className="relative mx-auto -mt-4 mb-10 max-w-6xl overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 py-10 shadow-2xl sm:px-10">
+      <div className="relative mx-auto -mt-4 mb-10 max-w-6xl overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 md:py-10 py-4 shadow-2xl sm:px-10">
         <div className="relative z-10 grid gap-8 sm:grid-cols-2 sm:items-center">
           <div className="text-white">
             <div className="mb-3 flex flex-wrap gap-2">
