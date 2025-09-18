@@ -265,10 +265,10 @@ function PriceAnchor() {
             <li>・<strong>30日間返金保証</strong>つき</li>
           </ul>
           <Link
-            href="/apply"
+            href="/pre_register"
             className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-rose-500 px-6 py-3 font-semibold text-white shadow hover:bg-rose-600"
           >
-            先行予約で申し込む
+            事前登録でクーポンゲット
           </Link>
         </div>
       </div>
