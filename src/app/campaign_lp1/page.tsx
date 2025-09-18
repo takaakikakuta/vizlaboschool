@@ -51,7 +51,7 @@ function CapacityBar({ total = 10, reserved = 0 }: { total?: number; reserved?: 
 ========================= */
 function PromoBanner() {
   return (
-    <div className="bg-rose-600 text-white mt-24">
+    <div className="bg-rose-600 text-white md:mt-24 mt-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-2">
         <p className="text-2xl font-semibold">
           🎉 建築ビジュアライゼーションコース完成記念｜【10/15 23:59 まで】事前登録でクーポン発行
