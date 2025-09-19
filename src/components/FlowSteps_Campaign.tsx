@@ -48,7 +48,7 @@ export default function FlowSteps_Campaign({
   items?: Step[];
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
       {/* 見出し（左右ライン） */}
       <div className="mb-10 flex items-center justify-center gap-6">
         <span className="h-px w-16 bg-zinc-300" />

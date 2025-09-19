@@ -21,6 +21,9 @@ const Footer = () => {
                     <Link href={"/SecurityPolicy"}>
                         <p>セキュリティポリシー</p>
                     </Link>
+                    <Link href={"https://vizlabo.com/"}>
+                        <p>Vizlabo</p>
+                    </Link>
                     {/* <p>料金プラン</p> */}
                 </div>
 

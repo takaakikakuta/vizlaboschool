@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FlowSteps from "@/components/FlowSteps";
 import FlowSteps_Campaign from "@/components/FlowSteps_Campaign";
+import OutcomesCapabilities, { SAMPLE_ITEMS } from "@/components/OutcomesCapabilities";
 
 /* =========================
    メタデータ
@@ -395,6 +396,12 @@ export default function ArchitectCampaignLP() {
       <Header />
       <PromoBanner />
       <Hero />
+      <OutcomesCapabilities
+        heading="修了後に担える業務"
+        subheading="4ヶ月で“現場で使える”基準を満たします。数値は実務基準の目安です。"
+        items={SAMPLE_ITEMS}
+        // variant="compact"
+      />
       <FlowSteps_Campaign/>
       {/* <SocialProof /> */}
       <ValueStack />
