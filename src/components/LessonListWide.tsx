@@ -16,6 +16,7 @@ export type Lesson = {
   index?: IndexItem[];
   // 任意：行の左に出すサムネ。未指定なら index[0].poster を使用
   thumbnail?: string;
+  skills?: string[]; // ← 追加: タイトル下に出す技術タグ
 };
 
 const COLOR_MAP = {
@@ -76,10 +77,24 @@ export default function LessonListWide({
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="truncate text-sm font-medium text-zinc-900">
+                  <span className="sm:truncate text-sm font-medium text-zinc-900 break-words">
                     {t.title}
                   </span>
                 </div>
+
+                 {/* 技術タグ（あれば表示） */}
+                    {t.skills?.length ? (
+                      <div className="mt-1.5 flex flex-wrap gap-1.5">
+                        {t.skills.map((s, k) => (
+                          <span
+                            key={k}
+                            className="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-[11px] leading-none text-zinc-600"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
               </div>
 
               {/* chevron */}

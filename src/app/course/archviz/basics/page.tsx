@@ -215,6 +215,7 @@ const Interior: Lesson[] = [
   title: "マグカップをつくる",
   desc: "スピン（回転押し出し）で本体を作成し、取っ手はカーブから押し出して滑らかにつなげる。スムーズシェードと厚み付けで仕上げる。",
   thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/basics/Interior_thumbnail/cup_sample.png",
+  skills: ["Bevel", "Loop Cut", "Inset", "Extrude"],
   // index: [
   //   {label: "スケール調整",video: "/videos/book-scale.mp4",poster: "/images/book-scale.jpg",tip: "Sキーで本らしい縦横比に整える"},
   //   {label: "複製と整列",video: "/videos/book-array.mp4",poster: "/images/book-array.jpg",tip: "Arrayで等間隔に複製して並べる"},
@@ -311,6 +312,7 @@ const CG_INTRO: Lesson[] = [
   {
     title: "太陽光の入る白い部屋",
     desc: "Sun/Sky と HDRI の使い分け、露出とホワイトバランス、白素材での色被り対策、窓際のハイライト管理とポストプロの基本。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/sample/white_room_sample.png",
     // index: [
     //   { label: "Shader Editor入門", video: "/videos/node-plus-1.mp4", poster: "/images/node-plus-1.jpg", tip: "Principled中心に。" },
     //   { label: "Mix/Maskの基礎", video: "/videos/node-plus-2.mp4", poster: "/images/node-plus-2.jpg", tip: "頂点カラー/UVで制御。" },
@@ -320,14 +322,17 @@ const CG_INTRO: Lesson[] = [
   {
     title: "柔らかな光に迎えられる和の玄関",
     desc: "面光源と色温度設計、障子の透過（Transmission/SSSの基礎）、木材の法線・粗さ表現、温白色のライティングで情緒を演出。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/sample/japanese_room_sample.png",
   },
   {
     title: "タイルが映えるサニタリースペース",
     desc: "PBRテクスチャの正しい適用（Base/Rough/Normal/Height）、目地と面取り、半光沢の反射コントロール、ミラー反射のノイズ対策。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/sample/sanitary_room_sample.png",
   },
   {
     title: "グリーンタイルが魅せるブランドショップ",
     desc: "アクセントカラーの見せ方、ミックス照明（環境＋スポット）の設計、Arrayでのタイル配置、ガラス/金属のマテリアル整理と構図作り。",
+    thumbnail:"https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/sample/shop_room_sample.png",
   },
 ];
 
@@ -377,7 +382,7 @@ export default function BasicsDetailPage() {
         {/* ▼ 追加：CGパース入門（4テーマ） */}
         <div className="mt-12">
           <h2 className="mb-4 text-base font-semibold text-zinc-900">CGパース入門</h2>
-          <LessonList items={CG_INTRO} color="sky"/>
+          <LessonListWide items={CG_INTRO} color="sky"/>
           <p className="mt-3 text-xs text-zinc-500">
             ※ 各テーマはテンプレート／チェックリスト付き。作例は課題として提出し、面談で添削します。
           </p>

@@ -14,6 +14,7 @@ export type Lesson = {
   desc: string;
   index?: IndexItem[];
   thumbnail?: string;
+  skills?: string[]; // ← 追加: タイトル下に出す技術タグ
 };
 
 // Tailwind用の色クラスをまとめておく
