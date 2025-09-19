@@ -104,7 +104,7 @@ function Hero() {
         <SoftwareNote />   {/* ← これを追加 */}
         <LaunchNote />
         <h1 className="mx-auto max-w-4xl text-2xl font-bold leading-tight text-zinc-900 sm:text-5xl">
-          <span className="text-rose-600">伴走コーチング</span>で“即戦力化”。<br className="hidden sm:block" />
+          <span className="text-rose-600">伴走コーチング</span>で“即戦力化”<br/>
           先着10名だけの<strong>特別オファー</strong><br/>
           <strong className="text-rose-600">建築パースのオンラインCGスクール</strong>
         </h1>
