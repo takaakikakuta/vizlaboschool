@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import FlowSteps from "@/components/FlowSteps";
 import FlowSteps_Campaign from "@/components/FlowSteps_Campaign";
 import OutcomesCapabilities, { SAMPLE_ITEMS } from "@/components/OutcomesCapabilities";
+import Image from "next/image"; // ← 追加
 
 /* =========================
    メタデータ
@@ -157,10 +158,23 @@ function Hero() {
           <div className="relative">
             <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-tr from-rose-500/20 via-rose-400/10 to-transparent blur-2xl" />
             <div className="overflow-hidden rounded-2xl border border-white/10 shadow-inner">
-              <img
+             <Image
                 src="https://vexpo.s3.ap-northeast-1.amazonaws.com/VizlaboSchool/Campaign_Hero.png"
                 alt="建築CGパースを勉強している様子"
-                className="object-cover"
+                // レイアウトに合わせて適正サイズを生成
+                // sm以上は2カラムの右半分 ≒ 50vw、未満は全幅
+                sizes="(min-width: 640px) 50vw, 100vw"
+                // 画像の実サイズがわかるなら width/height を指定（例: 1600x1000）
+                width={1600}
+                height={1000}
+                className="h-full w-full object-cover"
+                // ヒーロー/LCP候補は優先読み込み
+                priority
+                // Chrome向けヒント（Next13.3+）
+                fetchPriority="high"
+                // ぼかしプレースホルダ（任意: 実画像の低解像版に差し替え可）
+                placeholder="blur"
+                blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2U1ZTVlYiIgIHZpZXdCb3g9IjAgMCAzMjAgMjAwIi8+"
               />
             </div>
           </div>

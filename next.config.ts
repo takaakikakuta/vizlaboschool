@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
       },
 
     images: {
-      domains: ['vexpostudio.s3.ap-northeast-1.amazonaws.com','vexpo.s3.ap-northeast-1.amazonaws.com']
+      domains: ['vexpostudio.s3.ap-northeast-1.amazonaws.com','vexpo.s3.ap-northeast-1.amazonaws.com'],
+      // 可能なら出力フォーマットをAVIF優先に
+    formats: ['image/avif', 'image/webp'],
     },
 };
 
