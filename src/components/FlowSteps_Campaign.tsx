@@ -48,7 +48,10 @@ export default function FlowSteps_Campaign({
   items?: Step[];
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+    <section
+        className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "900px" }}
+      >
       {/* 見出し（左右ライン） */}
       <div className="mb-10 flex items-center justify-center gap-6">
         <span className="h-px w-16 bg-zinc-300" />
@@ -83,8 +86,14 @@ export default function FlowSteps_Campaign({
                 width={640}
                 height={400}
                 className="h-44 w-full object-cover sm:h-48"
-                priority={s.num === "01"}
-              />
+                // priority={s.num === "01"} // ← 外す：ヒーロー以外はpriorityなし
+                // グリッド幅：lgは4列=1枚あたり~25%、smは2列=50%、未満は100%
+                // コンテナ max-w-6xl ≒ 1152px を前提にピクセル指定にして更に確実に軽量化
+                sizes="(min-width:1024px) 270px, (min-width:640px) 50vw, 100vw"
+                quality={60}            // デフォルト75→60で容量ダウン（見た目ほぼ同等）
+                placeholder="blur"      // 体感改善（任意）
+                blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iM...IgLz4=" // 簡易ブラー
+              />  
             </div>
 
             {/* 本文 */}
